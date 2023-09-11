@@ -6,7 +6,7 @@ def LinearRegression(X, Y, lr, n_iters):
     print(weights)
     bias = 0
 
-    for i in range(n_iters):
+    for _ in range(n_iters):
         y_hat = np.dot(X, weights) + bias
 
         dw = (1/n_samples)*(np.dot(X.T, (y_hat - Y)))
